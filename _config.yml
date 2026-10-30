@@ -1,0 +1,23 @@
+# Site settings
+# 部署到 <github用户名>.github.io 时 baseurl 保持为空；部署到子路径时改成 "/子路径"
+baseurl: ""
+url: "https://ggyy01.github.io"
+
+markdown: kramdown
+plugins:
+  - jekyll-email-protect
+
+timezone: Asia/Tokyo
+
+collections:
+  - publications
+
+exclude:
+  - README.md
+  - README_zh.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/
+  - LICENSE
+  - serve.sh

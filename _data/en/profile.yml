@@ -1,0 +1,65 @@
+primary_name: "Yufei Gao"
+secondary_name: ""
+furigana: ""
+navbar_name: "Yufei Gao"
+
+positions:
+  - name: "Ph.D. Graduate School of Science and Engineering, Hosei University"
+
+research_interests:
+  - "Music-to-dance generation"
+  - "Human motion synthesis"
+  - "Diffusion models"
+  - "Cross-modal learning"
+  - "Human-centric video compression"
+
+short_bio: >-
+  <p>
+    My research focuses on deep learning–based music-driven choreography, which automatically generates dance motion from music.
+    It covers three key aspects of generated dance: natural movement, fit with the music’s rhythm and style, and coordination between partners in duet dance.
+    I have also studied how human pose information can be used to compress and transmit dance video efficiently.
+  </p>
+
+education:
+  - name: "Hosei University"
+    dept: "Graduate School of Science and Engineering"
+    position: "Ph.D."
+    date: "Sep. 2023 – Mar. 2027 (expected)"
+    details:
+      - "Dissertation: <em>A Comprehensive Framework for Deep Learning-Based Music-Driven Choreography: From Motion Generation to Video Transmission</em>"
+      - "Supervisor: Jinjia Zhou"
+  - name: "Southwest University of Science and Technology"
+    dept: "Mianyang, China"
+    position: "Master's degree"
+    date: "Sep. 2020 – Jul. 2023"
+  - name: "Southwest University of Science and Technology"
+    dept: "Mianyang, China"
+    position: "Bachelor's degree"
+    date: "Sep. 2013 – Jul. 2017"
+
+# 工作经历：公司与年限未提供，暂不公开显示。补充后取消注释即可。
+experience:
+# - name: "【TBD: Company】"
+#   position: "Python Backend Engineer"
+#   date: "【TBD】"
+
+awards:
+  - name: "First Prize, Science and Technology Progress Award, China General Chamber of Commerce (CGCC) Science and Technology Award"
+    details:
+      - "Project: Key Technologies and Industrial Applications of Full-Chain Perception Smart IoT"
+    date: "Dec. 2025"
+
+patents:
+  - name: "A Music-to-Dance Pose Generation Method Based on a Multi-Feature Fusion Strategy"
+    details:
+      - "Chinese Invention Patent ZL 2022 1 0458956.0 (CN 114998984 B), granted Jun. 13, 2025"
+      - "Second inventor · Patentee: Southwest University of Science and Technology"
+    date: "Jun. 2025"
+
+skills:
+  - title: "Research"
+    text: "Able to conduct deep-learning research independently, including formulating problems, designing experiments, and writing and publishing papers in English; proficient in generative models such as diffusion models, Transformers and GANs; have explored music-to-dance generation in considerable depth, with papers published in academic journals and conferences such as IEEE Access and ISCAS."
+  - title: "Programming"
+    text: "Able to independently develop and deploy websites and to develop and test efficient automation scripts and tools; understand fundamentals such as computer networks and data structures; proficient with Linux, NAS, PVE, Docker, Python and other tools."
+  - title: "Languages"
+    text: "Able to communicate in Japanese and English in daily and academic settings, and to write academic papers in English."

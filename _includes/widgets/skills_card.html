@@ -1,0 +1,14 @@
+{%- include i18n.html -%}
+{% if P.skills and P.skills.size > 0 %}
+<section class="section" id="skills">
+    <h2 class="section-title">{{ T.skills }}</h2>
+    <dl class="skills mb-0">
+        {% for s in P.skills %}
+        <div class="skill-row">
+            <dt>{{ s.title }}</dt>
+            <dd>{{ s.text }}</dd>
+        </div>
+        {% endfor %}
+    </dl>
+</section>
+{% endif %}

@@ -1,0 +1,113 @@
+# 语言列表与界面文字。新增页面时，在 pages 中登记其路径。
+# 英文在根路径 /，中文在 /zh/，日文在 /ja/
+languages:
+  - code: en
+    html_lang: en
+    label: EN
+    name: English
+    prefix: ""
+  - code: zh
+    html_lang: zh-CN
+    label: 中
+    name: 中文
+    prefix: "/zh"
+  - code: ja
+    html_lang: ja
+    label: 日
+    name: 日本語
+    prefix: "/ja"
+
+# 页面键 -> 相对路径（各语言共用，前面加上语言前缀）
+pages:
+  - key: home
+    path: "/"
+  - key: publications
+    path: "/publications/"
+  - key: activities
+    path: "/activities/"
+
+ui:
+  en:
+    patents: Patents
+    skills: Skills
+    service: Academic Service
+    nav_home: Home
+    nav_publications: Publications
+    nav_activities: Activities
+    nav_cv: CV
+    about: About
+    news: News
+    education: Education
+    experience: Experience
+    awards: Honors & Awards
+    selected_publications: Selected Publications
+    all_publications: All publications
+    publications: Publications
+    projects: Projects
+    activities: Academic Activities
+    cv: Curriculum Vitae
+    cv_download: Download CV (PDF)
+    cv_pending: CV (PDF) — to be uploaded
+    last_updated: Last updated
+    equal_contribution: equal contribution
+    corresponding_author: corresponding author
+    date_format: "%b %d"
+    page_title_home: Home
+    not_found: The requested page could not be found.
+    go_home: Go home
+  zh:
+    patents: 专利
+    skills: 技能
+    service: 学术服务
+    nav_home: 首页
+    nav_publications: 论文
+    nav_activities: 学术活动
+    nav_cv: 简历
+    about: 关于我
+    news: 动态
+    education: 教育经历
+    experience: 工作经历
+    awards: 荣誉与奖项
+    selected_publications: 代表论文
+    all_publications: 全部论文
+    publications: 论文
+    projects: 项目
+    activities: 学术活动
+    cv: 个人简历
+    cv_download: 下载简历（PDF）
+    cv_pending: 简历（PDF）待上传
+    last_updated: 最后更新
+    equal_contribution: 共同第一作者
+    corresponding_author: 通讯作者
+    date_format: "%m-%d"
+    page_title_home: 首页
+    not_found: 页面不存在。
+    go_home: 返回首页
+  ja:
+    patents: 特許
+    skills: スキル
+    service: 学術貢献
+    nav_home: ホーム
+    nav_publications: 業績
+    nav_activities: 活動
+    nav_cv: CV
+    about: 自己紹介
+    news: ニュース
+    education: 学歴
+    experience: 職歴
+    awards: 受賞歴
+    selected_publications: 主要論文
+    all_publications: 論文一覧
+    publications: 論文
+    projects: プロジェクト
+    activities: 学術活動
+    cv: 履歴書
+    cv_download: CV をダウンロード（PDF）
+    cv_pending: CV（PDF）準備中
+    last_updated: 最終更新
+    equal_contribution: 共同筆頭著者
+    corresponding_author: 責任著者
+    date_format: "%m/%d"
+    page_title_home: ホーム
+    not_found: ページが見つかりません。
+    go_home: ホームへ戻る

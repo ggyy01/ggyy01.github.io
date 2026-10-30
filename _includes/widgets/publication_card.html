@@ -1,0 +1,14 @@
+{%- include i18n.html -%}
+{% assign publications = include.publications %}
+<section class="section" id="publications">
+    <div class="d-flex align-items-baseline justify-content-between">
+        <h2 class="section-title">{{ include.title | default: T.selected_publications }}</h2>
+        <a class="section-more" href="{{ prefix | append: '/publications/' | relative_url }}">{{ T.all_publications }} →</a>
+    </div>
+    {% include widgets/pub_legend.html %}
+    <div class="pub-list">
+    {% for item in publications limit:include.limit %}
+        {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last %}
+    {% endfor %}
+    </div>
+</section>

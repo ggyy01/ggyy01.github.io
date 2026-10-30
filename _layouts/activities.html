@@ -1,0 +1,47 @@
+---
+layout: default
+---
+{%- include i18n.html -%}
+{%- assign A = site.data[lang].activities -%}
+<div class="row">
+    <div class="col-12 col-lg-10">
+        <h1 class="page-title">{{ T.nav_activities }}</h1>
+
+        {% if A.projects and A.projects.size > 0 %}
+        <section class="section pt-0" id="projects">
+            <h2 class="section-title">{{ T.projects }}</h2>
+            <div class="row">
+                {% for p in A.projects %}
+                <div class="col-md-6 mb-4">
+                    <div class="project">
+                        {% if p.image %}<img src="{{ p.image | relative_url }}" alt="{{ p.title }}" class="w-100 pub-cover mb-3">{% endif %}
+                        <h3 class="pub-title">{{ p.title }}</h3>
+                        <p class="pub-abstract mb-2">{{ p.description }}</p>
+                        {% if p.links %}
+                        <div class="pub-links">
+                            {% for link in p.links %}<a target="_blank" rel="noopener" href="{{ link[1] }}">{{ link[0] }}</a>{% endfor %}
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        {% endif %}
+
+        {% if A.activities and A.activities.size > 0 %}
+        <section class="section pt-0" id="activities">
+            <h2 class="section-title">{{ T.activities }}</h2>
+            {% for s in A.activities %}
+            <div class="activity-group">
+                <h3 class="activity-title">{{ s.section }}</h3>
+                <ul class="activity-list">
+                    {% for it in s.items %}<li>{{ it }}</li>{% endfor %}
+                </ul>
+            </div>
+            {% endfor %}
+        </section>
+        {% endif %}
+        {{ content }}
+    </div>
+</div>

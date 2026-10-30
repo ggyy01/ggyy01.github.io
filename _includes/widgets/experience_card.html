@@ -1,0 +1,24 @@
+{%- include i18n.html -%}
+{%- assign groups = "education,experience,awards,patents" | split: "," -%}
+{% for g in groups %}
+{%- assign items = P[g] -%}
+{% if items and items.size > 0 %}
+<section class="section" id="{{ g }}">
+    <h2 class="section-title">{{ T[g] }}</h2>
+    <ul class="timeline list-unstyled mb-0">
+        {% for item in items %}
+        <li class="timeline-item">
+            <div class="timeline-main">
+                {% if item.logo %}<img src="{{ item.logo | relative_url }}" alt="" class="inline-logo">{% endif %}
+                <span class="timeline-name">{{ item.name }}</span>
+                {% if item.dept %}<span class="timeline-dept">{{ item.dept }}</span>{% endif %}
+                {% if item.position %}<div class="timeline-sub">{{ item.position }}</div>{% endif %}
+                {% for d in item.details %}<div class="timeline-detail">{{ d }}</div>{% endfor %}
+            </div>
+            <div class="timeline-date">{{ item.date }}</div>
+        </li>
+        {% endfor %}
+    </ul>
+</section>
+{% endif %}
+{% endfor %}

@@ -1,0 +1,17 @@
+# 联系方式（三种语言共用）。留空的项目不会显示。
+# 注意：学校邮箱毕业后可能失效，请换成长期邮箱（见 README_zh.md TODO）
+email: "2638666713@qq.com"
+github: "shuodehaoa"
+gscholar: "https://scholar.google.com/citations?user=2FECvKkAAAAJ"
+orcid: ""
+linkedin: ""
+researchmap: ""
+twitter: ""
+
+portrait_url: /assets/images/photos/portrait.jpg
+
+# 简历 PDF：放到 assets/files/ 后填写路径；留空则不显示 CV 按钮和导航项
+cv:
+  en: ""
+  zh: ""
+  ja: ""

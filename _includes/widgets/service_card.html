@@ -1,0 +1,10 @@
+{%- include i18n.html -%}
+{%- assign A = site.data[lang].activities -%}
+{% if A.activities and A.activities.size > 0 %}
+<section class="section" id="service">
+    <h2 class="section-title">{{ T.service }}</h2>
+    <ul class="activity-list list-unstyled mb-0">
+        {% for s in A.activities %}{% for it in s.items %}<li>{{ it }}</li>{% endfor %}{% endfor %}
+    </ul>
+</section>
+{% endif %}

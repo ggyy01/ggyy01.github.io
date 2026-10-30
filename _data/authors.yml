@@ -1,0 +1,6 @@
+# 作者信息（三语共用）。键 = 论文 front matter 中写的作者名。
+# 本人姓名（self names）自动加粗。
+"Yufei Gao":
+  bold: true
+"Yu-Fei Gao":
+  bold: true

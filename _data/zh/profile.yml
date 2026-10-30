@@ -1,0 +1,63 @@
+primary_name: "高宇飞"
+secondary_name: "Yufei Gao"
+furigana: ""
+navbar_name: "高宇飞"
+
+positions:
+  - name: "法政大学 理工学研究科 博士"
+
+research_interests:
+  - "音乐驱动舞蹈生成"
+  - "人体动作合成"
+  - "扩散模型"
+  - "跨模态学习"
+  - "面向人体的视频压缩"
+
+short_bio: >-
+  <p>
+    主要研究基于深度学习的音乐驱动自动编舞，即根据音乐自动生成舞蹈动作。研究围绕生成舞蹈的三个关键方面展开：动作的自然度、动作与音乐节奏和风格的契合，以及双人舞中舞者之间的配合。此外，还研究了如何利用人体姿态信息高效地压缩和传输舞蹈视频。
+  </p>
+
+education:
+  - name: "法政大学"
+    dept: "理工学研究科"
+    position: "博士"
+    date: "2023.09 – 2027.03（预计）"
+    details:
+      - "学位论文：<em>A Comprehensive Framework for Deep Learning-Based Music-Driven Choreography: From Motion Generation to Video Transmission</em>"
+      - "导师：周金佳"
+  - name: "西南科技大学"
+    dept: "中国 绵阳"
+    position: "硕士"
+    date: "2020.09 – 2023.07"
+  - name: "西南科技大学"
+    dept: "中国 绵阳"
+    position: "学士"
+    date: "2013.09 – 2017.07"
+
+# 工作经历：公司与年限未提供，暂不公开显示。补充后取消注释即可。
+experience:
+# - name: "【待填写：公司】"
+#   position: "Python 后端工程师"
+#   date: "【待填写】"
+
+awards:
+  - name: "中国商业联合会科学技术奖 科技进步奖 一等奖"
+    details:
+      - "项目：全链感知智慧物联关键技术及产业化应用"
+    date: "2025.12"
+
+patents:
+  - name: "一种基于多特征融合策略的音乐生成舞蹈姿势方法"
+    details:
+      - "中国发明专利 ZL 2022 1 0458956.0（授权公告号 CN 114998984 B），2025年6月13日授权"
+      - "第二发明人 · 专利权人：西南科技大学"
+    date: "2025.06"
+
+skills:
+  - title: "科研"
+    text: "能够独立完成深度学习方向的研究，包括提出问题、设计实验，以及撰写和发表英文论文；掌握扩散模型、Transformer、GAN 等生成模型；在音乐生成舞蹈领域进行了比较深入的探索，并在 IEEE Access、ISCAS 等学术期刊和会议上发表论文。"
+  - title: "编程"
+    text: "能够独立开发和部署网站、开发并测试自动化高效率脚本工具；理解并掌握计算机网络、数据结构等基础原理；熟练使用 Linux、NAS、PVE、Docker、Python 等工具。"
+  - title: "外语"
+    text: "能够用日语和英语进行日常及学术交流，并用英语撰写学术论文。"

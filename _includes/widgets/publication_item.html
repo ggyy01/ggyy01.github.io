@@ -1,0 +1,32 @@
+{%- include i18n.html -%}
+{%- assign item = include.item -%}
+{%- assign abs_key = "abstract_" | append: lang -%}
+{%- assign abstract = item[abs_key] | default: item.abstract -%}
+<div class="pub-item {% unless include.hide_bottom_border %}with-border{% endunless %}">
+    <div class="row no-gutters">
+        {%- if item.cover -%}
+        <div class="col-md-3 pr-md-4 mb-3 mb-md-0 pub-cover-col">
+            <img data-src="{{ item.cover | relative_url }}" alt="{{ item.title }}" class="lazy w-100 pub-cover" src="{{ '/assets/images/empty_300x200.png' | relative_url }}">
+        </div>
+        <div class="col-md-9">
+        {%- else -%}
+        <div class="col-12">
+        {%- endif -%}
+            <h3 class="pub-title">{{ item.title }}</h3>
+            <div class="pub-authors">{% include widgets/author_list.html authors=item.authors %}</div>
+            <div class="pub-venue">{{ item.pub_pre }}<em>{{ item.pub }}</em>{{ item.pub_post }}{% if item.pub_date and item.pub_date != "" %}, {{ item.pub_date }}{% endif %}{% if item.pub_last %} {{ item.pub_last }}{% endif %} <span data-semantic-scholar-id="{{ item.semantic_scholar_id }}"></span></div>
+            {% if abstract %}<div class="pub-abstract">{{ abstract }}</div>{% endif %}
+            {% if item.links %}
+            <div class="pub-links abstract-links">
+                {% for link in item.links %}
+                {% if link[1].url %}
+                <a target="{{ link[1]['target'] }}" href="{{ link[1]['url'] }}">{{ link[0] }}</a>
+                {% else %}
+                <a target="_blank" rel="noopener" href="{{ link[1] }}">{{ link[0] }}</a>
+                {% endif %}
+                {% endfor %}
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+{%- comment -%}
+  公共多语言变量：每个 include / layout 开头引入。
+  lang   : 当前语言代码（来自页面 front matter 的 lang，默认 en）
+  T      : 界面文字
+  P      : 当前语言的个人信息 (_data/<lang>/profile.yml)
+  C      : 共用联系方式 (_data/contact.yml)
+  prefix : 当前语言的 URL 前缀（"" / "/zh" / "/ja"）
+{%- endcomment -%}
+{%- assign lang = page.lang | default: "en" -%}
+{%- assign T = site.data.i18n.ui[lang] -%}
+{%- assign P = site.data[lang].profile -%}
+{%- assign C = site.data.contact -%}
+{%- for l in site.data.i18n.languages -%}{%- if l.code == lang -%}{%- assign LANG = l -%}{%- endif -%}{%- endfor -%}
+{%- assign prefix = LANG.prefix -%}
+{%- assign cv_link = C.cv[lang] -%}

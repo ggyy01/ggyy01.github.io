@@ -1,0 +1,33 @@
+---
+layout: default
+body_attr: >-
+  data-spy="scroll" data-target="#navbar-year" data-offset="100"
+---
+{%- include i18n.html -%}
+{% assign pubs_by_year = site.publications | sort: "date" | reverse | group_by_exp: "item", "item.date | date: '%Y'" %}
+
+<div class="row">
+    <div class="col-12 col-lg-10">
+        <h1 class="page-title">{{ T.nav_publications }}</h1>
+        {% include widgets/pub_legend.html %}
+        {% for year in pubs_by_year %}
+        <section class="section pt-0" id="year-{{ year.name }}">
+            <h2 class="year-title">{{ year.name }}</h2>
+            <div class="pub-list">
+            {% for item in year.items %}
+                {% include widgets/publication_item.html item=item hide_bottom_border=forloop.last %}
+            {% endfor %}
+            </div>
+        </section>
+        {% endfor %}
+        {{ content }}
+    </div>
+
+    <div class="col-2 d-none d-lg-block">
+        <div id="navbar-year" class="nav nav-pills flex-column sticky-top year-nav" style="top: 100px">
+            {% for year in pubs_by_year %}
+            <a class="nav-link d-block" href="#year-{{ year.name }}">{{ year.name }}</a>
+            {% endfor %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,63 @@
+primary_name: "高宇飛"
+secondary_name: "Yufei Gao"
+furigana: "ガウ ユフエ"
+navbar_name: "高宇飛"
+
+positions:
+  - name: "法政大学大学院 理工学研究科 博士後期課程"
+
+research_interests:
+  - "音楽からのダンス生成"
+  - "人体動作合成"
+  - "拡散モデル"
+  - "クロスモーダル学習"
+  - "人物中心の映像圧縮"
+
+short_bio: >-
+  <p>
+    深層学習を用いた音楽駆動型の自動振付、すなわち音楽からダンス動作を自動生成する技術について研究しています。具体的には、動作の自然さ、音楽のリズムやスタイルとの一致、デュエットにおけるダンサー同士の協調という三つの観点から研究を進めてきました。また、人体の姿勢情報を利用してダンス動画を効率的に圧縮・伝送する手法にも取り組みました。
+  </p>
+
+education:
+  - name: "法政大学大学院"
+    dept: "理工学研究科"
+    position: "博士後期課程"
+    date: "2023.09 – 2027.03（修了見込み）"
+    details:
+      - "博士論文：<em>A Comprehensive Framework for Deep Learning-Based Music-Driven Choreography: From Motion Generation to Video Transmission</em>"
+      - "指導教員：周 金佳"
+  - name: "西南科技大学"
+    dept: "中国・綿陽"
+    position: "修士課程"
+    date: "2020.09 – 2023.07"
+  - name: "西南科技大学"
+    dept: "中国・綿陽"
+    position: "学士課程"
+    date: "2013.09 – 2017.07"
+
+# 職歴：会社名・期間が未提供のため非表示。追記後にコメントを外してください。
+experience:
+# - name: "【要記入：会社名】"
+#   position: "Python バックエンドエンジニア"
+#   date: "【要記入】"
+
+awards:
+  - name: "中国商業連合会 科学技術賞 科学技術進歩賞 一等賞"
+    details:
+      - "プロジェクト：全链感知智慧物联关键技术及产业化应用（Key Technologies and Industrial Applications of Full-Chain Perception Smart IoT）"
+    date: "2025.12"
+
+patents:
+  - name: "多特徴融合戦略に基づく音楽からのダンス姿勢生成方法"
+    details:
+      - "中国発明特許 ZL 2022 1 0458956.0（CN 114998984 B）、2025年6月13日登録"
+      - "第2発明者・特許権者：西南科技大学"
+    date: "2025.06"
+
+skills:
+  - title: "研究"
+    text: "深層学習分野の研究を、課題設定や実験設計から英語論文の執筆・発表まで独力で遂行できます。拡散モデル、Transformer、GAN などの生成モデルを習得しています。音楽からのダンス生成について深く研究し、IEEE Access や ISCAS などの学術誌・国際会議で論文を発表しています。"
+  - title: "プログラミング"
+    text: "Web サイトの開発・デプロイ、および効率化のための自動化スクリプトの開発・テストを独力で行えます。コンピュータネットワークやデータ構造などの基礎原理を理解しており、Linux、NAS、PVE、Docker、Python などを使いこなせます。"
+  - title: "語学"
+    text: "日本語と英語で日常的・学術的なコミュニケーションができ、英語で学術論文を執筆できます。"

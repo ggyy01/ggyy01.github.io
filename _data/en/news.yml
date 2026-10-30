@@ -1,0 +1,7 @@
+# News：按列表顺序显示（请把最新的写在最上面）。date 为显示文字，未知具体日期时只写年份。
+- date: "2026.10"
+  text: "Our survey “Music-to-dance generation: A survey” has been accepted to <em>Computational Visual Media</em>."
+- date: "2026"
+  text: "“ChoreDiffusion: Beat-Aware Diffusion for Music-to-Dance Generation” is published in <em>Information</em> (MDPI). <a href=\"https://doi.org/10.3390/info17080808\" target=\"_blank\" rel=\"noopener\">DOI</a>"
+- date: "2026"
+  text: "“PoseCodec: Specialized Human Action Compression via Pose Guidance and Adaptive Learning” is published in <em>IEEE Access</em>. <a href=\"https://doi.org/10.1109/ACCESS.2026.3722083\" target=\"_blank\" rel=\"noopener\">DOI</a>"

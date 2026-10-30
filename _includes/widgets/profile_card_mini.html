@@ -1,0 +1,59 @@
+{%- include i18n.html -%}
+<div class="sticky-md-top profile-card">
+    <div class="text-center text-md-left">
+        {% if C.portrait_url and C.portrait_url != "" %}
+        <img src="{{ C.portrait_url | relative_url }}" class="portrait" alt="{{ P.primary_name }}">
+        {% endif %}
+
+        {% if P.furigana and P.furigana != "" %}<div class="profile-furigana">{{ P.furigana }}</div>{% endif %}
+        <h1 class="profile-name">{{ P.primary_name }}</h1>
+        {% if P.secondary_name and P.secondary_name != "" %}
+        <div class="profile-secondary-name">{{ P.secondary_name }}</div>
+        {% endif %}
+
+        <div class="profile-positions">
+            {% for position in P.positions %}
+            <div>{{ position.name }}</div>
+            {% endfor %}
+        </div>
+
+        {% if P.research_interests %}
+        <div class="profile-interests">
+            {% for r in P.research_interests %}<span class="tag">{{ r }}</span>{% endfor %}
+        </div>
+        {% endif %}
+
+        {% if C.email and C.email != "" %}<div class="profile-email">
+            <a class="email-text" href="mailto:{{ C.email | encode_email }}">{{ C.email }}</a>
+        </div>{% endif %}
+
+        <div class="profile-links">
+            {% if C.gscholar and C.gscholar != "" %}
+            {%- if C.gscholar contains 'scholar.google' -%}{%- assign gscholar_url = C.gscholar -%}
+            {%- else -%}{%- assign gscholar_url = 'https://scholar.google.com/citations?user=' | append: C.gscholar -%}{%- endif -%}
+            <a target="_blank" rel="noopener" href="{{ gscholar_url }}" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+            {% endif %}
+            {% if C.github and C.github != "" %}
+            <a target="_blank" rel="noopener" href="https://github.com/{{ C.github }}" title="GitHub"><i class="fab fa-github"></i></a>
+            {% endif %}
+            {% if C.orcid and C.orcid != "" %}
+            <a target="_blank" rel="noopener" href="https://orcid.org/{{ C.orcid }}" title="ORCID"><i class="ai ai-orcid"></i></a>
+            {% endif %}
+            {% if C.researchmap and C.researchmap != "" %}
+            <a target="_blank" rel="noopener" href="https://researchmap.jp/{{ C.researchmap }}" title="researchmap"><i class="fas fa-flask"></i></a>
+            {% endif %}
+            {% if C.linkedin and C.linkedin != "" %}
+            <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/{{ C.linkedin }}" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            {% endif %}
+            {% if C.twitter and C.twitter != "" %}
+            <a target="_blank" rel="noopener" href="https://x.com/{{ C.twitter }}" title="X"><i class="fab fa-x-twitter"></i></a>
+            {% endif %}
+        </div>
+
+        {% if cv_link and cv_link != "" %}
+        <div class="profile-cv">
+            <a class="btn-cv" target="_blank" rel="noopener" href="{{ cv_link | relative_url }}"><i class="fas fa-arrow-down"></i> {{ T.cv_download }}</a>
+        </div>
+        {% endif %}
+    </div>
+</div>
